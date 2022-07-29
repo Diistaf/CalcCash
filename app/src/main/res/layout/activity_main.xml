@@ -4,15 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/main_color"
+    android:padding="10dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_gravity="fill"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="CalcCash"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textColor="@color/white"
+            android:textSize="64sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <ImageView
+            android:layout_height="200dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/cash_flow"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="20dp"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:hint="Login"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="20dp"
+            android:height="48dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/border_for_edittext"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="20dp"
+            android:height="48dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/border_for_edittext"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textSize="16sp"
+                style="@style/ButtonStyle"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
